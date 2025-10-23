@@ -1,7 +1,8 @@
 streamlit==1.37.1
 pymilvus==2.4.6
+environs==9.5.0         # required by pymilvus 2.4.x
+marshmallow>=3.13.0     # needed by environs, safe
 groq>=0.9.0
 python-dotenv>=1.0.1
 rapidfuzz>=3.9.6
-marshmallow>=3.13.0
-environs>=11.0.0
+rich==13.9.4            # keep <14 for Streamlit 1.37
