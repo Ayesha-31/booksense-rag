@@ -1,23 +1,19 @@
-# ensure PyTorch CPU wheels are available
 --extra-index-url https://download.pytorch.org/whl/cpu
 
 streamlit==1.37.1
-rich==13.9.4                  # streamlit 1.37 requires rich < 14
+rich==13.9.4
 
-# milvus client + its deps (compatible pins)
 pymilvus==2.4.6
-environs==9.5.0               # required by pymilvus 2.4.x
-marshmallow==3.21.3           # >=3.13 needed for __version_info__
+environs==9.5.0
+marshmallow==3.21.3
 
-# LLM + utils
 groq>=0.9.0
 python-dotenv>=1.0.1
 rapidfuzz>=3.9.6
 
-# embeddings
 sentence-transformers==2.6.1
+torch==2.5.1+cpu
+torchvision==0.20.1+cpu
+torchaudio==2.5.1+cpu
 transformers>=4.41.1
-torch==2.3.1+cpu
-torchaudio==2.3.1+cpu
-torchvision==0.18.1+cpu
 huggingface-hub>=0.23.0
